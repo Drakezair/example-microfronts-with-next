@@ -10,8 +10,15 @@ const Home = (props) => {
   return (
     <>
       <h1>HOLA MUkkNDO DESDE EL REMOTO 2</h1>
+      <p>{JSON.stringify(props)}</p>
     </>
   );
+};
+
+Home.getInitialProps = async () => {
+  return {
+    ae: "HOLA ssTESTkjn",
+  };
 };
 
 export default Home;
