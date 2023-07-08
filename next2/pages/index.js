@@ -9,7 +9,9 @@ const inter = Inter({ subsets: ["latin"] });
 const Home = (props) => {
   return (
     <>
-      <h1>HOLA MUkkNDO DESDE EL REMOTO 2</h1>
+      <h1 className="bg-red-800 text-white text-6xl">
+        HOLA MUNDO DESDE EL NEXT 2
+      </h1>
       <p>{JSON.stringify(props)}</p>
     </>
   );
@@ -17,7 +19,7 @@ const Home = (props) => {
 
 Home.getInitialProps = async () => {
   return {
-    ae: "HOLA ssTESTkjn",
+    ssr: "HOLA SSR",
   };
 };
 
